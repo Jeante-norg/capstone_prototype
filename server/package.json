@@ -1,18 +1,37 @@
 {
-  "name": "server",
+  "name": "shareme",
+  "private": true,
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "package.json",
+  "license": "UNLICENSED",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "sanity"
+  ],
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^5.1.0",
-    "mongoose": "^8.13.2"
+    "@sanity/vision": "^3.83.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "^3.83.0",
+    "styled-components": "^6.1.15"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^5.0.2",
+    "@types/react": "^18.0.25",
+    "eslint": "^9.9.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
   }
 }
